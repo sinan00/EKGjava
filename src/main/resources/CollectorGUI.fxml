@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<FlowPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CollectorController">
+    <Button onAction="#startDataCollection">Start DataCollection</Button>
+    <Button onAction="#startRecording">Start recording</Button>
+    <Button onAction="#loadData">Load Data</Button>
+    <TextField fx:id="idField" prefHeight="27.0" prefWidth="199.0" />
+    <TextArea fx:id="hospitalDataOutput" prefHeight="133.0" prefWidth="532.0" />
+
+    <Text cache="true" strokeType="OUTSIDE" strokeWidth="0.0" text="EKG" wrappingWidth="279.21875">
+    <font>
+        <Font size="24.0" />
+    </font></Text>
+    <AreaChart prefHeight="19.0" prefWidth="445.0">
+     <xAxis>
+       <CategoryAxis side="BOTTOM" />
+     </xAxis>
+     <yAxis>
+       <NumberAxis side="LEFT" />
+     </yAxis>
+   </AreaChart>
+
+</FlowPane>
